@@ -1,3 +1,68 @@
 @import "~normalize.css";
 
 @import "_variables";
+
+:root {
+    --display:none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.main {
+    display:flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    position:relative;
+    &__heading {
+        min-width: 100vw;;
+        position:absolute;
+        text-align: center;
+    }
+    &__heading-special {
+        margin: 36px 0px;
+    }
+}
+
+.article {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    justify-content: space-evenly;
+    &__special {
+        flex-grow: 5;
+        font-size:36px;
+    }
+    &__content {
+        order:1;
+        display:var(--display);
+    }
+    &__content-special{
+        display:block;
+    }
+    &__link {
+        order:-1;
+        display:var(--display);
+    }
+    &__link-special{
+        display:block;
+    }
+    &--1 {
+        background:red;
+    }
+    &--2 {
+        background:green;
+    }
+    &--3 {
+        background:orange;
+    }
+    &--4 {
+        background:pink;
+    }
+    &--5 {
+        background:blue;
+    }
+}
