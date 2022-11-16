@@ -2,67 +2,114 @@
 
 @import "_variables";
 
-:root {
-    --display:none;
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    min-height: 100vh;
-    min-width: 100vw;
+  margin: 0;
 }
 
 .main {
-    display:flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  &__heading {
+    color: black;
+    font-size: 50px;
     min-width: 100vw;
-    position:relative;
-    &__heading {
-        min-width: 100vw;;
-        position:absolute;
-        text-align: center;
-    }
-    &__heading-special {
-        margin: 36px 0px;
-    }
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+  }
 }
 
 .article {
-    align-items:center;
-    display:flex;
-    flex-direction:column;
-    flex-grow:1;
-    justify-content: space-evenly;
-    &__special {
-        flex-grow: 5;
-        font-size:36px;
-    }
-    &__content {
-        order:1;
-        display:var(--display);
-    }
-    &__content-special{
-        display:block;
-    }
-    &__link {
-        order:-1;
-        display:var(--display);
-    }
-    &__link-special{
-        display:block;
-    }
-    &--1 {
-        background:red;
-    }
-    &--2 {
-        background:green;
-    }
-    &--3 {
-        background:orange;
-    }
-    &--4 {
-        background:pink;
-    }
-    &--5 {
-        background:blue;
-    }
+  background: #688f9c;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 16px 16px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba (0, 0, 0, 0.45);
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s ease-in, background 0.2s;
+  &--1 {
+    background: url(../assets/img/mountain.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  &--2 {
+    background: url(../assets/img/rain.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  &--3 {
+    background: url(../assets/img/sky.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  &--4 {
+    background: url(../assets/img/freedom.jpg);
+    background-position: center right;
+    background-size: cover;
+  }
+  &--5 {
+    background: url(../assets/img/flower.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  &:hover {
+    border: 1px solid red;
+  }
+}
+
+.article > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.article > *:first-child {
+  transform: translateY(-100%);
+}
+
+.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.article > *:last-child {
+  transform: translateY(100%);
+}
+
+.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.open {
+  flex: 5;
+  font-size: 30px;
 }
