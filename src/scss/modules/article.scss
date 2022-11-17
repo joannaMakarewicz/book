@@ -1,0 +1,69 @@
+.article {
+    align-items: center;
+    background: #688f9c;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 16px 16px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba (0, 0, 0, 0.45);
+    text-transform: uppercase;
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+      flex 0.7s ease-in, background 0.2s;
+    &__photo {
+      max-width: 150px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    &--1 {
+      background: url(../assets/img/mountain.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--2 {
+      background: url(../assets/img/rain.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--3 {
+      background: url(../assets/img/sky.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &--4 {
+      background: url(../assets/img/freedom.jpg);
+      background-position: center right;
+      background-size: cover;
+    }
+    &--5 {
+      background: url(../assets/img/flower.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &:hover {
+      border: 2px solid white;
+    }
+    & > * {
+      align-items: center;
+      display: flex;
+      flex: 1 0 auto;
+      font-size: 10px;
+      justify-content: center;
+      margin: 0;
+      transition: transform 0.5s;
+      text-align: center;
+      width: 100%;
+    }
+    & > *:first-child {
+      align-items: flex-end;
+      transform: translateY(-150%);
+    }
+    & > *:last-child {
+      align-items: flex-start;
+      transform: translateY(150%);
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.open-active > *:first-child {
+    font-size: 50px;
+    transform: translateY(0);
+  }
+  
+  .open-active > *:last-child {
+    font-size: 50px;
+    transform: translateY(0);
+  }
+  
+  .open {
+    flex: 5;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px white;
+  }
