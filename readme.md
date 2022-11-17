@@ -1,18 +1,15 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://joannamakarewicz.github.io/book/book.jpg)
 
-# WTF Webpack Starter Kit 
+# My favorite books in 2022
 
-Simple toolkit for your static websites development.
+List of five my favorite books. List made in 2022 based on simple animation.
 
-## How to use it?
+## Description
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Click on the picture of the book cover to see extra information about that book.
 
-## Available scripts
+## Languages
 
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+- JS
+- CSS
+- HTML.
