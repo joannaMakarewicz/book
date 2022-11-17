@@ -11,7 +11,8 @@ this.classList.toggle('open');
 };
 
 function additionalElement(e){
-    if(e.propertyName.includes('flex')){
+    console.log(e);
+    if(!e.propertyName.includes('flex')){
     this.classList.toggle('open-active');
     }
 }
