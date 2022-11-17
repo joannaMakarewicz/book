@@ -51,6 +51,11 @@ body {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba (0, 0, 0, 0.45);
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
     flex 0.7s ease-in, background 0.2s;
+  &__photo {
+    flex-shrink: 1;
+    overflow: hidden;
+    max-width: 150px;
+  }
   &--1 {
     background: url(../assets/img/mountain.jpg);
     background-position: center;
@@ -93,7 +98,7 @@ body {
 }
 
 .article > *:first-child {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   align-items: flex-end;
 }
 
@@ -102,7 +107,7 @@ body {
 }
 
 .article > *:last-child {
-  transform: translateY(100%);
+  transform: translateY(150%);
   align-items: flex-start;
 }
 
