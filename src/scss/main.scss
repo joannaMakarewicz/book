@@ -94,6 +94,7 @@ body {
 
 .article > *:first-child {
   transform: translateY(-100%);
+  align-items: flex-end;
 }
 
 .open-active > *:first-child {
@@ -102,6 +103,7 @@ body {
 
 .article > *:last-child {
   transform: translateY(100%);
+  align-items: flex-start;
 }
 
 .open-active > *:last-child {
