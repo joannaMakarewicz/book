@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap");
 
 html {
-  background: #ffc600;
+  background: #004b23;
   box-sizing: border-box;
   color: #ffc600;
   font-family: "Roboto Mono", monospace;
@@ -37,4 +37,32 @@ body {
     text-align: center;
     z-index: 2;
   }
+}
+
+@media screen and (max-width:425px){
+.main {
+  display:block;
+  &__heading {
+    position:static;
+  }
+}
+
+.article__photo {
+  margin: 16px 0;
+}
+.article > *:first-child {
+  transform: translateX(-150%);
+}
+
+.article > *:last-child {
+  transform: translateX(150%);
+}
+
+.open-active > *:first-child {
+  transform: translateX(0);
+}
+.open-active > *:last-child {
+  transform: translateX(0);
+}
+
 }
