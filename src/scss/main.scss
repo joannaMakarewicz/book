@@ -39,10 +39,12 @@ body {
   }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
+
 .main {
   display:block;
   &__heading {
+    font-size:40px;
     position:fixed;
     padding: 0 2px;
   }
@@ -67,9 +69,11 @@ body {
 }
 
 .open-active > *:first-child {
+  font-size: 30px;
   transform: translateX(0);
 }
 .open-active > *:last-child {
+  font-size: 30px;
   transform: translateX(0);
 }
 
