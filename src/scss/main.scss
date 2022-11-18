@@ -43,13 +43,17 @@ body {
 .main {
   display:block;
   &__heading {
-    position:static;
+    position:fixed;
   }
 }
 
-.article__photo {
+.article {
+  min-height: 100vh;
+  &__photo {
   margin: 16px 0;
 }
+}
+
 .article > *:first-child {
   transform: translateX(-150%);
 }
