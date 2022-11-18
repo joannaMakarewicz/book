@@ -44,11 +44,15 @@ body {
   display:block;
   &__heading {
     position:fixed;
+    padding: 0 2px;
   }
 }
 
 .article {
   min-height: 100vh;
+  &__header {
+    margin-top:50px;
+  }
   &__photo {
   margin: 16px 0;
 }
