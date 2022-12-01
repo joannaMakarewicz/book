@@ -17,6 +17,14 @@
       max-width: 150px;
       max-height: 200px;
       overflow: hidden;
+      @media screen and (min-width:769px) {
+        max-width: 100px;
+        max-height: 150px;
+      }
+      @media screen and (min-width:1024px) {
+        max-width: 150px;
+        max-height: 200px;
+      }
     }
     &--1 {
       background: url(../assets/img/mountain.jpg);
